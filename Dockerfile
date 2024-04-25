@@ -8,4 +8,4 @@ WORKDIR /app
 COPY script.py .
 
 # Ejecutar el script Python cuando se inicia el contenedor
-CMD ["python", "script.py"]
+CMD ["python", "hola_mundo.py"]

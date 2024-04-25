@@ -17,4 +17,4 @@ jobs:
               run: docker build -t app-prueba
 
             - name: Ejecutar acción en contenedor
-              run: docker run my-python-app
+              run: docker run app-prueba
