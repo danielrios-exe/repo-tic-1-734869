@@ -1,0 +1,17 @@
+name: Impresión de mensajes
+
+on:
+    push:
+        branches:
+            - test_1
+
+jobs:
+    print_messages:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Imprimir mensaje 1
+              run: echo "Impresión 1"
+            - name: Imprimir mensaje 2
+              run: echo "Impresión 2"
+            - name: Imprimir mensaje 3
+              run: echo "Impresión 3"
