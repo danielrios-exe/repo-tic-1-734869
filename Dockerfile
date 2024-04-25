@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copiar código Python al contenedor
-COPY script.py .
+COPY hola_mundo.py .
 
 # Ejecutar el script Python cuando se inicia el contenedor
 CMD ["python", "hola_mundo.py"]
