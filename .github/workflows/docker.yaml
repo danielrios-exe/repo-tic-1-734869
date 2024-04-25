@@ -1,0 +1,20 @@
+name: Docker Action
+
+on:
+    push:
+        branches:
+            - tarea_8
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout código fuente
+              uses: actions/checkout@v2
+
+            - name: Construir contenedor
+              run: docker build -t app-prueba
+
+            - name: Ejecutar acción en contenedor
+              run: docker run my-python-app
