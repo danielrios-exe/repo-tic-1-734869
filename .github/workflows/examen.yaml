@@ -20,6 +20,6 @@ jobs:
             - name: Nombre
               run: node nombre.js
             - name: Versión node
-              run: echo "Versión de Node.js: $(node -v)"
+              run: node -v
             - name: Expediente
               run: node expediente.js
